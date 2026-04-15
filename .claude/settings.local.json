@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/local/lib/node_modules/npm/bin/**)",
+      "Read(//Users/dylanpettijohn/.nvm/versions/node/**)",
+      "Bash(/usr/local/bin/npm install:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/**)",
+      "Bash(npm install:*)",
+      "Bash(export PATH=\"/usr/local/bin:$PATH\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls /usr/local/bin/node /opt/homebrew/bin/node ~/.nvm/versions/node/*/bin/node)",
+      "Bash(/usr/local/bin/node --version)",
+      "Bash(node /usr/local/bin/npm install recharts)",
+      "Bash(xargs sed:*)",
+      "Bash(node -e \"const rdp = require\\('./node_modules/react-day-picker/package.json'\\); console.log\\(rdp.version, Object.keys\\(rdp.exports || {}\\).slice\\(0,10\\)\\)\")",
+      "Bash(grep -r \"primary\" /Users/dylanpettijohn/PropertyManagementApplication/frontend/tailwind.config.*)",
+      "Bash(sed -i '' \"s/c\\\\.status === 'PENDING'/c.status === 'UNPAID'/g\" /Users/dylanpettijohn/PropertyManagementApplication/frontend/src/pages/charges/ChargesList.tsx)",
+      "Bash(sed -i '' \"s/charge\\\\.status === 'PENDING'/charge.status === 'UNPAID'/g\" /Users/dylanpettijohn/PropertyManagementApplication/frontend/src/pages/charges/ChargesList.tsx)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Frontend (Vite + React)",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["./node_modules/.bin/vite"],
+      "port": 5173,
+      "cwd": "frontend",
+      "url": "http://localhost:5173"
+    },
+    {
+      "name": "Backend (Spring Boot)",
+      "runtimeExecutable": "mvn",
+      "runtimeArgs": ["spring-boot:run"],
+      "port": 8080,
+      "cwd": "backend",
+      "url": "http://localhost:8080",
+      "note": "Backend not yet scaffolded — run after Java/Spring Boot setup is complete"
+    },
+    {
+      "name": "Database (Docker Compose — Postgres + pgAdmin)",
+      "runtimeExecutable": "docker",
+      "runtimeArgs": ["compose", "up", "-d"],
+      "port": 5432,
+      "cwd": ".",
+      "url": "http://localhost:5050",
+      "note": "docker-compose.yml not yet created — will be available after backend scaffold"
+    }
+  ]
+}
