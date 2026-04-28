@@ -5,5 +5,5 @@ import com.propertymanagement.pms.entities.PropertyEO;
 import java.util.List;
 
 public interface PropertyService {
-    public List<PropertyEO>  getProperties(String userId);
+    List<PropertyEO>  getProperties(String userId);
 }

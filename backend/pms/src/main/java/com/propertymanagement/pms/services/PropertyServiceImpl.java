@@ -15,8 +15,8 @@ public class PropertyServiceImpl implements PropertyService {
 
     @Override
     public List<PropertyEO> getProperties(String ownerId) {
-        List<PropertyEO> properties = propertyDAO.getProperties(ownerId);
+          
+        return propertyDAO.getProperties(ownerId);
 
-        return properties;
     };
 }
